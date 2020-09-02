@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>firebase-demo</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <p>Firebase Runa Random</p>
+      <div>
+        <button class="btn btn-secondary" id="login-btn">LogIn</button>
+        <button class="btn btn-secondary hidden" id="logout-btn">LogOut</button>
+      </div>
+    </nav>
+    <main>
+      <h2 id="title"></h2>
+      <section>
+        <div id="messages"></div>
+        <form id="form">
+          <input
+            id="form-input"
+            class="input"
+            type="text"
+            placeholder="Write Something funny"
+            disabled
+          />
+          <button id="form-btn" class="btn btn-primary" type="submit" disabled>
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>made with 💜 by Oswaldinho</footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase
+    <script src="/__/firebase/init.js"></script> -->
+
+    <!-- My JS -->
+    <script src="./app.js"></script>
+  </body>
+</html>
