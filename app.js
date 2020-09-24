@@ -1,12 +1,12 @@
 /****** firebase initialization ******/
 const firebaseConfig = {
-  apiKey: "AIzaSyCYJVZV82swWZYxjS8UoOtWxIbx9pXyv70",
-  authDomain: "runa-demos.firebaseapp.com",
-  databaseURL: "https://runa-demos.firebaseio.com",
-  projectId: "runa-demos",
-  storageBucket: "runa-demos.appspot.com",
-  messagingSenderId: "1091914196929",
-  appId: "1:1091914196929:web:6a8b15680a595700f13140",
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
 };
 
 firebase.initializeApp(firebaseConfig);
