@@ -2,6 +2,7 @@
   --runa-purple: #7a6ff0;
   --runa-white: #fff;
   --runa-blue: #352c60;
+  --runa-grey: #e7e6ec;
 }
 * {
   font-family: Avenir;
@@ -39,10 +40,41 @@ main {
 }
 
 #messages {
-  height: calc(80vh - 100px);
+  height: calc(80vh - 150px);
   border: 2px solid var(--runa-purple);
   border-radius: 5px;
   margin: 10px 0;
+  overflow-y: scroll;
+}
+
+.message {
+  min-height: 30px;
+  width: 80%;
+  padding: 5px 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: var(--runa-grey);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.my-message {
+  margin-left: calc(20% - 10px);
+}
+
+.message .message-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.message .message-user {
+  font-size: 10px;
+  font-weight: bolder;
+}
+.message p {
+  margin: 0;
 }
 
 #form {
@@ -100,4 +132,15 @@ footer {
 
 .hidden {
   display: none;
+}
+
+.laFoto {
+  width: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#errors {
+  margin: 5px;
+  color: red;
 }
